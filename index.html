@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La tyrannie de la suite logique</title>
+
+	<!-- styles globaux -->
+	<link rel="stylesheet" href="rsrc/style.css">
+	
+	<!-- styles locaux -->
+	<style>
+		/* styles pour __ce page__ seule */
+		del {
+			text-decoration-line: line-through;
+			text-decoration-thickness: 0.33em;
+			text-decoration-color: #000000e1;
+			text-shadow: none !important;
+		}
+		img {
+			image-rendering: pixelated;
+		}
+		#Content { justify-content: flex-start; }
+		#Calque { opacity: 0.4; }
+
+	</style>
+</head>
+<body class="positive">
+
+	<!-- Une image -->
+	<div id="Image">
+		<!-- <img src="image.jpeg" alt=""> -->
+		<!-- <video src="movie.mp4" autoplay loop mute></video> -->
+		<img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/La_Trahison_des_images.jpg" alt="">
+	</div>
+
+	<!-- Calque intérmediare entre image et texte -->
+	<div id="Calque">&nbsp;</div>
+	
+	<!-- Un texte -->
+	<div id="Content">
+		<h1><del>La trahison des images</del> 
+			 <br>La tyrannie de la suite logique</h1>
+		<h2 class="fadeIn10">Click anywhere.</h2>
+	</div>
+
+	<!-- Le lien vers la suite -->
+	<a href="02.html" id="OverlayLink">&nbsp;</a>
+
+	<script>
+		var msg = new SpeechSynthesisUtterance();
+		msg.text = "La tyrannie de la suite logique";
+		//window.speechSynthesis.speak(msg);
+	</script>
+
+</body>
+</html>

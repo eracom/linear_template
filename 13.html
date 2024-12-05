@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>la suite…</title>
+
+	<!-- styles globaux -->
+	<link rel="stylesheet" href="rsrc/style.css">
+	
+	<!-- styles locaux -->
+	<style>
+		/* styles pour __ce page__ seule */
+
+		#Content { justify-content: end; }
+		h1 { font-size: calc( 4rem + 16vw );}
+		/* #Calque { opacity: 0.4; } */
+		/* #Image * { filter: blur(4px); } */
+</style>
+</head>
+<body class="neg"><!-- class="positive" ←← option text noir sur blanc -->
+
+	<!-- Une image -->
+	<div id="Image">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/CN12003.jpg" alt="">
+		<!-- <video src="movie.mp4" autoplay loop mute></video> -->
+	</div>
+
+	<!-- Calque intérmediare entre image et texte // activer dans le <style>-->
+	<div id="Calque">&nbsp;</div>
+
+	<!-- Un texte -->
+	<div id="Content">
+		<h1>la suite…</h2>
+	</div>
+
+	<!-- Le lien vers la suite -->
+	<a href="index.html"
+	id="OverlayLink">&nbsp;</a>
+
+</body>
+</html>
